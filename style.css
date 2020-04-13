@@ -23,9 +23,11 @@ h4{
 }
 .hero-banner{
 	background-color: #007FFF;
-	height: 100vh;
+	min-height: 100vh;
 	padding: 30px 20px;
 	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
 }
 
 .hero-banner h1{
@@ -44,25 +46,26 @@ h4{
 	margin: 0;
 }
 .heart{
-	background: url(img/heart.png) no-repeat 0 0;
+	background: url(heart.png) no-repeat 0 0;
 	background-size: 100%;
-	width: 363px;
-	height: 344px;
-	position: absolute; top: 117px right: 89px;
+	width: 563px;
+	height: 544px;
+	position: absolute; top: 117px; right: 20px;
+	transform: rotate(15deg);
 }
 .leaf{
-	background: url(img/leaf.png) no-repeat 0 0;
+	background: url(leaf.png) no-repeat 0 0;
 	background-size: 100%;
-	width: 309px;
-	height: 371px;
-	position: absolute; top: 213px right: 277px;
+	width: 509px;
+	height: 571px;
+	position: absolute; top: 213px; right: 277px;
 }
 .star{
-	background: url(img/star.png) no-repeat 0 0;
+	background: url(star.png) no-repeat 0 0;
 	background-size: 100%;
-	width: 397px;
-	height: 386px;
-	position: absolute; bottom: 74px right: 109px;
+	width: 697px;
+	height: 586px;
+	position: absolute; bottom: 10px; right: 50px;
 }
 
 a.cta,
