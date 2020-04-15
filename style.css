@@ -149,6 +149,19 @@ nav ul li a{
 text-align: center;
 }
 
+.more-info p{
+	margin-top: 18px;
+	margin-bottom: 35px;
+}
+
+.highlight{
+	background-color: pink;
+	color: red;
+	padding: 5px 10px;
+	display: inline;
+	line-height: 50px;
+}
+
 
 
 
