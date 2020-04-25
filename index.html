@@ -25,7 +25,7 @@
 <nav>
 	<a href="#" class="logo">The Pals</a>
 	<ul>
-		<li><a href="#">Sign Up</a></li>
+		<li><a href="javascript:()" onclick="showPopup()">Sign Up</a></li>
 		<li><a href="#story">The Story</a></li>
 		<li><a href="#more-info">More Info</a></li>
 		
@@ -35,7 +35,7 @@
 	<div class="wrapper">
 	<h2>Join Our Fan Club</h2>
 	<p>Every week we have a <span class="highlight"> party.</span> If you want to join us then join our Fan clun. Members also receive pictures of us in all kinds of shapes and sizes. Cool huh? </p>
-	<button class="cta">Sign Me Up!</button>
+	<button class="cta" onclick="showPopup()">Sign Me Up!</button>
 	</div>
 </div>
 <div class="sep"></div>
@@ -65,11 +65,12 @@
 	Made by Diana from <a href="http://google.com">Diana's World</a>
 	</div>
 </footer>
-<div class="popup">
+<div class="popup" id="popup">
 	<div class="blanket"></div>
 	<div class="content">
 		<h2>Fill In Your Details</h2>
 		<form action="">
+			<div class="row">
 			<div class="item">
 				<label>Your First Name</label>
 				<input type="text" placeholder="Awesomeface" value="Shirley">
@@ -78,6 +79,8 @@
 				<label>Your Last Name</label>
 				<input type="text" placeholder="Circleface">
 		</div>
+	</div>
+	<div class="row">
 		<div class="item">
 			<label>Your Favorite Color</label>
 			<input type="text" placeholder="Pink">
@@ -86,9 +89,12 @@
 			<label>Your Favorite Food</label>
 			<input type="text" placeholder="Sushi">
 		</div>
+	</div>
 		<button class="cta">I Want In!</button>
 		</form>
-		<button class="close">Close</button>
+		<button class="close" onclick="hidePopup();">Close</button>
 	</div>
+</div>
+<script src="script.js" type="text/javascript"></script>
 </body>
 </html>

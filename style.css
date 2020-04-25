@@ -88,7 +88,7 @@ button.cta{
 	font-weight: bold;
 	color: white;
 	background: #007FFF;
-	display: inline-block;
+	display: block;
 	box-shadow: 0 0 0 10px rgba(0,127,255,.15);
 	padding: 20px 30px;
 	border-radius: 10px;
@@ -108,6 +108,7 @@ button.cta.alt{
 	background-color: #FFD400;
 	color: #111111;
 	box-shadow: 0 0 0 10px rgba(0,0,0,.15);
+	margin-right: 75%;
 }
 
 nav{
@@ -250,27 +251,106 @@ color: rgba(0,0,0,.4);
 
 .popup{
 	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 2;
 }
+
+.popup.show{
+	display: block;
+}
+.popup .blanket{
+	background-color: rgba(0,0,0,.7);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.popup .content{
+	box-sizing: border-box;
+	padding: 30px 40px;
+	width: 960px;
+	height: 500px;
+	background-color: white;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -250px;
+	margin-left: -480px;
+}
+
+.popup h2{
+	margin: 10px 0 20px;
+}
+
+.popup .cta{
+	margin-top: 40px;
+	text-align: center;
+	margin-left: 40%;
+}
+.popup .close{
+	width: 60px;
+	height: 60px;
+	background: white url(button.png) no-repeat center center;
+	background-size: 400%;
+	position: absolute;
+	top: -40px;
+	right: -40px;
+	border-radius: 50%;
+	border: none;
+	outline: none;
+	overflow: hidden;
+	text-indent: -999px;
+	cursor: pointer;
+}
+.popup .row{
+
+}
+
+.popup .row:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+.popup .item{
+	float: left;
+	width: 400px;
+	margin-left: 40px;
+	text-align: left;
+
+}
+.popup .item first-child{
+	margin-left: 0;
+}
+
+.popup .item label{
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+
+}
+
+.popup .item input[type="text"]{
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	border: 4px solid #111111;
+	height: 70px;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 15px 20px;	
+}
+
+
 /*
-
-<div class="sep"></div>
-<div class="story" id="story">
-	<ul class="nb-list">
-		<li class="blue">Rock 'n Roll</li>
-		<li class="grey">&nbsp;</li>
-		<li class="dragging">Laughter</li> 
-		<li class="red">Square Offs</li>
-		<li class="pink">Circuitous Routes</li>
-		<li class="blue">Trigonometry</li>
-		<li class="red">Rad Hats</li>
-		<li class="salmon">Being Silly</li>
-	</ul>
-	<h3>Left: Things We Find Important</br>
-	Below: Our Story</h3>
-	<p>Once upon a time there was a group of odd shapes. They were mostly black and rectangular. They were mean and very serious.</p>
-	<p>And so they kicked the 3 shapes and that didn't conform out of their gand, which was called the Right Angled Gand</p>
-	<p>And so these 3 shapes were very sad but found great joy being around each other and they became the most well-known pals in the universe.</p>
-</div>
-<div class="sep"></div>
-
-*/
+.popup{
+	display: none;
+	}
+	*/
